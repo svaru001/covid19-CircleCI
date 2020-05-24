@@ -10,9 +10,8 @@ jobs:
       - node/with-cache:
           steps:
             - run: npm install
-            - run: ./node_modules/.bin/wdio web.conf.js
+            - run: npm test
 workflows:
     build-and-test:
       jobs:
         - build-and-test
-#Test
